@@ -8,3 +8,4 @@
 /client/tsconfig.app.json
 /server/node_modules
 /config.env
+/client/src/assets
