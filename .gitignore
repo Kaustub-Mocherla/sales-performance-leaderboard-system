@@ -1,0 +1,10 @@
+/client/node_modules
+/client/public
+/client/eslint.config.js
+/client/.gitignore
+/client/package-lock.json
+/client/package.json
+/client/tsconfig.node.json
+/client/tsconfig.app.json
+/server/node_modules
+/config.env
