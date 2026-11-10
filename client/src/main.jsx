@@ -1,49 +1,16 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import App from "./App";
-import Record from "./components/Record";
-import RecordList from "./components/RecordList";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
 import "./index.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <RecordList />,
-      },
-    ],
-  },
-  {
-    path: "/edit/:id",
-    element: <App />,
-    children: [
-      {
-        path: "/edit/:id",
-        element: <Record />,
-      },
-    ],
-  },
-  {
-    path: "/create",
-    element: <App />,
-    children: [
-      {
-        path: "/create",
-        element: <Record />,
-      },
-    ],
-  },
-]);
+// Find the root element in index.html
+const root = ReactDOM.createRoot(
+  document.getElementById("root")
+);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Render our application
+root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );
