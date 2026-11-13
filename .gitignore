@@ -9,3 +9,4 @@
 /server/node_modules
 /config.env
 /client/src/assets
+/server/.env
