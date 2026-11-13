@@ -1,12 +1,22 @@
-/client/node_modules
-/client/public
-/client/eslint.config.js
-/client/.gitignore
-/client/package-lock.json
-/client/package.json
-/client/tsconfig.node.json
-/client/tsconfig.app.json
-/server/node_modules
-/config.env
-/client/src/assets
-/server/.env
+# Dependencies
+node_modules/
+
+# Environment variables and credentials
+.env
+.env.*
+*.env
+!.env.example
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
